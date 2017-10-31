@@ -18,7 +18,7 @@ spec:
           - containerPort: 8082
           env:
           - name: PORT
-            value: "8888"
+            value: "8082"
           - name: SPRING_PROFILES_ACTIVE
             value: dev
           - name: SYSTEM_PROPS # additional options to be passed to the running process
