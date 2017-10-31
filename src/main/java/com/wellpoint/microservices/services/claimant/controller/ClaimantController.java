@@ -77,4 +77,11 @@ public class ClaimantController {
 		return message;
 
 	}
+	
+	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	public String healthCheck()
+
+	{
+		return "okay";
+	}
 }
