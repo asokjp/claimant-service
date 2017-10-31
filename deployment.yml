@@ -70,18 +70,6 @@ spec:
           value: "{{systemProps}}"
         - name: SPRING_PROFILES_ACTIVE
           value: dev
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8082
-          initialDelaySeconds: 30
-          periodSeconds: 3
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 8082
-          initialDelaySeconds: 30
-          periodSeconds: 3
         image: docker.io/istio/proxy_debug:0.2.4
         imagePullPolicy: IfNotPresent
         name: istio-proxy
