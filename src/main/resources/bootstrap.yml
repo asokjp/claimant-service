@@ -3,13 +3,7 @@ spring:
     name: claimantservice
   cloud:
     config:
-      uri: http://35.202.142.5:32672
+      uri: http://configserver:8888
       name: claimantservice
-    kubernetes:
-      secrets:
-        enabled: true
-        paths: /etc/mongo/config
-      reload:
-        enabled: true
 server:
   port: 8082
