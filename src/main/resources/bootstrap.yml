@@ -3,7 +3,7 @@ spring:
     name: claimantservice
   cloud:
     config:
-      uri: http://configserver:8888
+      uri: http://35.202.142.5:32672
       name: claimantservice
     kubernetes:
       secrets:
