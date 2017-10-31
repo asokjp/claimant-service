@@ -3,7 +3,7 @@ spring:
     name: claimantservice
   cloud:
     config:
-      uri: http://configserver:8888
+      uri: http://config-server:8888
       name: claimantservice
 server:
   port: 8082
