@@ -78,7 +78,7 @@ public class ClaimantController {
 
 	}
 	
-	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	@RequestMapping(value = "/claimant-servicehealth", method = RequestMethod.GET)
 	public String healthCheck()
 
 	{
