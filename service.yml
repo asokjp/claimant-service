@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: {{appName}}
   labels:
-    name: {{appName}}
-    visualize: "true"
+    app: {{appName}}
 spec:
   ports:
-    - port: 8082
+  - port: 8082
+    name: http
   selector:
-    name: {{appName}}
-  type: NodePort
+    app: {{appName}}
